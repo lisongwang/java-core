@@ -1,0 +1,10 @@
+ThermostatDay 0
+LightOn 100
+WaterOn 200
+WaterMistOn 300
+FansOn 400
+FansOff 1200
+WaterMistOff 1300
+WaterOff 1400
+LightOff 1500
+ThermostatNight 1600

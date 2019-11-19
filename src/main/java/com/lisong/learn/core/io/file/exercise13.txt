@@ -1,0 +1,23 @@
+1: package com.lisong.learn.core.io;
+2: 
+3: import java.io.*;
+4: 
+5: import static com.lisong.learn.core.util.Print.print;
+6: 
+7: public class Exercise13 {
+8: 
+9:     public static void main(String[] args) {
+10:         if(args.length < 2) {
+11:             print("Provide the input file as well as output file!");
+12:             System.exit(0);
+13:         }
+14:         try (LineNumberReader lr = new LineNumberReader(new FileReader(new File(args[0])));
+15:              PrintWriter out = new PrintWriter(new File(args[1]))) {
+16:             String s;
+17:             while((s = lr.readLine()) != null)
+18:                 out.println(lr.getLineNumber() + ": " + s);
+19:         } catch (IOException e) {
+20:             e.printStackTrace();
+21:         }
+22:     }
+23: }

@@ -1,0 +1,32 @@
+1: package com.lisong.learn.core.io;
+2: 
+3: import com.lisong.learn.core.util.TextFile;
+4: 
+5: import java.io.*;
+6: import java.util.Arrays;
+7: import java.util.LinkedList;
+8: import java.util.List;
+9: import java.util.ListIterator;
+10: 
+11: import static com.lisong.learn.core.util.Print.print;
+12: 
+13: public class Exercise12 {
+14: 
+15:     public static void main(String[] args) {
+16:         if(args.length < 2) {
+17:             print("Provide the input file as well as output file!");
+18:             System.exit(0);
+19:         }
+20:         List<String> lines = new LinkedList<>(Arrays.asList(TextFile.readLines(new File(args[0]))));
+21:         try (PrintWriter out = new PrintWriter(new File(args[1]))){
+22:             ListIterator<String> it = lines.listIterator();
+23:             int count = 1;
+24:             while(it.hasNext()) {
+25:                 String line = it.next();
+26:                 out.println(count++ + ": " + line);
+27:             }
+28:         } catch (FileNotFoundException e) {
+29:             e.printStackTrace();
+30:         }
+31:     }
+32: }

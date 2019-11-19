@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+    <person>
+        <name>
+            <first>Ming</first>
+            <last>Li</last>
+        </name>
+        <address>Shanghai</address>
+        <email>liming@163.com</email>
+        <phone>18929590920</phone>
+    </person>
+    <person>
+        <name>
+            <first>Lei</first>
+            <last>Wang</last>
+        </name>
+        <address>Beijing</address>
+        <email>leiwang@yahoo.com</email>
+        <phone>18029390110</phone>
+    </person>
+    <person>
+        <name>
+            <first>Han</first>
+            <last>Sun</last>
+        </name>
+        <address>Guangzhou</address>
+        <email>hansun@gmail.com</email>
+        <phone>13815215436</phone>
+    </person>
+</people>

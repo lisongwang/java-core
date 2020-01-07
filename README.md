@@ -18,4 +18,4 @@ is placed in specific package with a self-explained package name. There is one m
 util package hold the classes refered by exercises from different chapters.
 
 The project was developed on jdk-1.8.0_211 and built by maven-3.6.2. My IDE is 
-IntelliJ IDEA-2019.2.3. You may need some particular setup when running the exercises developed in pluggible annotation processor.   
+IntelliJ IDEA-2019.2.3. You may need some particular setup when running the exercises developed in pluggible annotation processor.
